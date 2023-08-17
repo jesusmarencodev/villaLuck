@@ -1,0 +1,117 @@
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\appsettings.Development.json
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\appsettings.json
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\VillaLuck.exe
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\VillaLuck.deps.json
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\VillaLuck.runtimeconfig.json
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\VillaLuck.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\VillaLuck.pdb
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.csproj.AssemblyReference.cache
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.GeneratedMSBuildEditorConfig.editorconfig
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.AssemblyInfoInputs.cache
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.AssemblyInfo.cs
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.csproj.CoreCompileInputs.cache
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.MvcApplicationPartsAssemblyInfo.cs
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.MvcApplicationPartsAssemblyInfo.cache
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets\msbuild.VillaLuck.Microsoft.AspNetCore.StaticWebAssets.props
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets\msbuild.build.VillaLuck.props
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.VillaLuck.props
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.VillaLuck.props
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets.pack.json
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets.build.json
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets.development.json
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\scopedcss\bundle\VillaLuck.styles.css
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.csproj.CopyComplete
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\refint\VillaLuck.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.pdb
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.genruntimeconfig.cache
+D:\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\ref\VillaLuck.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\appsettings.json
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\VillaLuck.exe
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\VillaLuck.deps.json
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\VillaLuck.runtimeconfig.json
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\VillaLuck.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\VillaLuck.pdb
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Humanizer.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.csproj.AssemblyReference.cache
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.AssemblyInfoInputs.cache
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.AssemblyInfo.cs
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.csproj.CoreCompileInputs.cache
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets\msbuild.VillaLuck.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets\msbuild.build.VillaLuck.props
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.VillaLuck.props
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.VillaLuck.props
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\scopedcss\bundle\VillaLuck.styles.css
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.csproj.CopyComplete
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\refint\VillaLuck.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.pdb
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\VillaLuck.genruntimeconfig.cache
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\ref\VillaLuck.dll

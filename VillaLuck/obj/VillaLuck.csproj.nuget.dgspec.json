@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\estudios\\25-Net\\VillaLuck\\VillaLuck\\VillaLuck.csproj": {}
+    "C:\\Users\\daro\\Documents\\JESUS MARENCO\\estudios\\25-Net\\VillaLuck\\VillaLuck\\VillaLuck.csproj": {}
   },
   "projects": {
-    "D:\\estudios\\25-Net\\VillaLuck\\VillaLuck\\VillaLuck.csproj": {
+    "C:\\Users\\daro\\Documents\\JESUS MARENCO\\estudios\\25-Net\\VillaLuck\\VillaLuck\\VillaLuck.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\estudios\\25-Net\\VillaLuck\\VillaLuck\\VillaLuck.csproj",
+        "projectUniqueName": "C:\\Users\\daro\\Documents\\JESUS MARENCO\\estudios\\25-Net\\VillaLuck\\VillaLuck\\VillaLuck.csproj",
         "projectName": "VillaLuck",
-        "projectPath": "D:\\estudios\\25-Net\\VillaLuck\\VillaLuck\\VillaLuck.csproj",
+        "projectPath": "C:\\Users\\daro\\Documents\\JESUS MARENCO\\estudios\\25-Net\\VillaLuck\\VillaLuck\\VillaLuck.csproj",
         "packagesPath": "C:\\Users\\daro\\.nuget\\packages\\",
-        "outputPath": "D:\\estudios\\25-Net\\VillaLuck\\VillaLuck\\obj\\",
+        "outputPath": "C:\\Users\\daro\\Documents\\JESUS MARENCO\\estudios\\25-Net\\VillaLuck\\VillaLuck\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\daro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,9 +41,27 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.JsonPatch": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
