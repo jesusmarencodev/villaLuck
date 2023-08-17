@@ -12,7 +12,7 @@ namespace VillaLuck.Modelos.Dto
         public double Tarifa { get; set; }
         public int Ocupantes { get; set; }
         public int MetrosCuadrados { get; set; }
-        public int ImagenUrl { get; set; }
+        public string ImagenUrl { get; set; }
         public string Amenidad { get; set; }
     }
 }
