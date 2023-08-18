@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using VillaLuck;
 using VillaLuck.Datos;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,10 +11,14 @@ builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Db
 builder.Services.AddDbContext<AplicationDbContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+//AutoMapping
+builder.Services.AddAutoMapper(typeof(MappingConfig));
 
 var app = builder.Build();
 
