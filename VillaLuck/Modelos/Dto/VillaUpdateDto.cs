@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace VillaLuck.Modelos.Dto
+namespace VillaLuck.Modelos
 {
     public class VillaUpdateDto
     {

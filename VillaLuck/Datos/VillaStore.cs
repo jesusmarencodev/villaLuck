@@ -1,4 +1,4 @@
-﻿using VillaLuck.Modelos.Dto;
+﻿using VillaLuck.Modelos;
 
 namespace VillaLuck.datos
 {

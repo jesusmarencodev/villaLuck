@@ -6,6 +6,7 @@ namespace VillaLuck.Datos
     public class AplicationDbContext:DbContext
     {
         public DbSet<Villa> Villas { get; set; }
+        public DbSet<NumeroVilla> NumeroVillas { get; set; }
 
         public AplicationDbContext(DbContextOptions<AplicationDbContext> options):base(options)
         {
