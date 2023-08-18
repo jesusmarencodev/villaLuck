@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using VillaLuck;
 using VillaLuck.Datos;
+using VillaLuck.Repositorio;
+using VillaLuck.Repositorio.IRepositorio;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,9 @@ builder.Services.AddDbContext<AplicationDbContext>(option =>
 
 //AutoMapping
 builder.Services.AddAutoMapper(typeof(MappingConfig));
+
+//agregando servicios para poder inyectar los repositorios al contructor
+builder.Services.AddScoped<IVillaRepositorio, VillaRepositorio>();
 
 var app = builder.Build();
 

@@ -1,15 +1,10 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using VillaLuck.datos;
-using VillaLuck.Datos;
 using VillaLuck.Modelos;
 using VillaLuck.Modelos.Dto;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using VillaLuck.Repositorio.IRepositorio;
+
 
 namespace VillaLuck.Controllers
 {
@@ -18,13 +13,13 @@ namespace VillaLuck.Controllers
     public class VillaController : ControllerBase
     {
         private readonly ILogger<VillaController> _logger;
-        private readonly AplicationDbContext _db;
+        private readonly IVillaRepositorio _villaRepo;
         private readonly IMapper _mapper;
 
-        public VillaController(ILogger<VillaController> logger, AplicationDbContext db, IMapper mapper)
+        public VillaController(ILogger<VillaController> logger, IVillaRepositorio villaRepo, IMapper mapper)
         {
             _logger = logger;
-            _db= db;
+            _villaRepo = villaRepo;
             _mapper = mapper;
         }
 
@@ -34,7 +29,7 @@ namespace VillaLuck.Controllers
         {
             _logger.LogInformation("Obtener las villas");
 
-            IEnumerable<Villa> villaList = await _db.Villas.ToListAsync();
+            IEnumerable<Villa> villaList = await _villaRepo.ObtenerTodos();
 
             return  Ok(_mapper.Map<IEnumerable<VillaDto>>(villaList));
         }
@@ -51,7 +46,7 @@ namespace VillaLuck.Controllers
                 return BadRequest();
             }
             // var villa = VillaStore.villaList.FirstOrDefault(v => v.Id == Id);
-            var villa = await _db.Villas.FirstOrDefaultAsync(v => v.Id == Id);
+            var villa = await _villaRepo.Obtener(v => v.Id == Id);
             if (villa == null)
             {
                 return NotFound();
@@ -66,7 +61,7 @@ namespace VillaLuck.Controllers
         public async Task<ActionResult<VillaCreateDto>> CrearVilla([FromBody] VillaCreateDto villaCreateDto)
         {
             if(!ModelState.IsValid) return BadRequest(ModelState);
-            if(await _db.Villas.FirstOrDefaultAsync(v=>v.Nombre.ToLower() == villaCreateDto.Nombre.ToLower()) != null)
+            if(await _villaRepo.Obtener(v=>v.Nombre.ToLower() == villaCreateDto.Nombre.ToLower()) != null)
             { 
                 ModelState.AddModelError("NombreExiste", "La villa con ese nombre ya existe");
                 return BadRequest(ModelState);  
@@ -91,11 +86,7 @@ namespace VillaLuck.Controllers
 
             //Con Mapper
             Villa modelo = _mapper.Map<Villa>(villaCreateDto);
-
-         
-
-            await _db.Villas.AddAsync(modelo);
-            await _db.SaveChangesAsync();   
+            await _villaRepo.Crear(modelo);
 
             return CreatedAtRoute("GetVilla", new { id = modelo.Id }, modelo);
         }
@@ -109,13 +100,11 @@ namespace VillaLuck.Controllers
 
             _logger.LogInformation($"{id}");
             if (id == 0) return BadRequest();
-            var villa = await _db.Villas.FirstOrDefaultAsync(v=> v.Id == id);
+            var villa = await _villaRepo.Obtener(v=> v.Id == id);
             if (villa == null) return NotFound();
 
             //VillaStore.villaList.Remove(villa);
-            _db.Villas.Remove(villa);
-            await _db.SaveChangesAsync();
-
+            await _villaRepo.Remover(villa);
             return NoContent();
 
         }
@@ -149,10 +138,7 @@ namespace VillaLuck.Controllers
 
             //Con Mapper
             Villa modelo = _mapper.Map<Villa>(villaUpdateDto);
-
-            _db.Villas.Update(modelo);
-            await _db.SaveChangesAsync();
-
+            await _villaRepo.Actualizar(modelo);
             return NoContent();
 
         }
@@ -167,7 +153,7 @@ namespace VillaLuck.Controllers
                 return BadRequest();
             }
             // var villa = VillaStore.villaList.FirstOrDefault(v => v.Id == id);
-            var villa = await _db.Villas.AsNoTracking().FirstOrDefaultAsync(v => v.Id == id);
+            var villa = await _villaRepo.Obtener(v => v.Id == id, traked:false);
 
             //Sin Mapper
             //VillaUpdateDto villaDto = new()
@@ -207,10 +193,8 @@ namespace VillaLuck.Controllers
             //Con mapper
             Villa modelo = _mapper.Map<Villa>(villaDto);
 
-            _db.Villas.Update(modelo);
-            await _db.SaveChangesAsync();
-
-
+            await _villaRepo.Actualizar(modelo);
+           
             return NoContent();
 
         }
