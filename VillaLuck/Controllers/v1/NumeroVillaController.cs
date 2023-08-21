@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -7,10 +8,11 @@ using VillaLuck.Modelos.Dto;
 using VillaLuck.Repositorio.IRepositorio;
 
 
-namespace VillaLuck.Controllers
+namespace VillaLuck.Controllers.v1
 {
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
+    [ApiVersion("1.0")]
     public class NumeroVillaController : ControllerBase
     {
         private readonly ILogger<NumeroVillaController> _logger;
@@ -29,6 +31,8 @@ namespace VillaLuck.Controllers
         }
 
         [HttpGet]
+
+        [Authorize]//aqui por endpoints
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<APIResponse>> GetNumeroVillas()
         {
@@ -57,6 +61,7 @@ namespace VillaLuck.Controllers
         }
 
         [HttpGet("id:int", Name = "GetNumeroVilla")]
+        [Authorize]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -97,6 +102,7 @@ namespace VillaLuck.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -121,7 +127,7 @@ namespace VillaLuck.Controllers
                     return BadRequest(ModelState);
                 }
 
-                if(await _villaRepo.Obtener(v => v.Id == villaCreateDto.VillaNo) != null)
+                if (await _villaRepo.Obtener(v => v.Id == villaCreateDto.VillaNo) != null)
                 {
                     ModelState.AddModelError("ClaveForanea", "El id de villa  no existe");
                 }
@@ -146,6 +152,7 @@ namespace VillaLuck.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize(Roles = "admin")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -186,6 +193,7 @@ namespace VillaLuck.Controllers
 
         }
         [HttpPut("{id:int}")]
+        [Authorize(Roles = "admin")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -198,7 +206,8 @@ namespace VillaLuck.Controllers
                 return BadRequest(_apiResponse);
             }
 
-            if(await _villaRepo.Obtener(v => v.Id == villaUpdateDto.VillaId)==null){
+            if (await _villaRepo.Obtener(v => v.Id == villaUpdateDto.VillaId) == null)
+            {
                 ModelState.AddModelError("ClaveForanea", "el id de la villa no existe");
                 return BadRequest(ModelState);
             }

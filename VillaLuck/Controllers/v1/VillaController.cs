@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -7,10 +8,12 @@ using VillaLuck.Modelos.Dto;
 using VillaLuck.Repositorio.IRepositorio;
 
 
-namespace VillaLuck.Controllers
+namespace VillaLuck.Controllers.v1
 {
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
+    [ApiVersion("1.0")]
+    [Authorize]// aqui globalmente
     public class VillaController : ControllerBase
     {
         private readonly ILogger<VillaController> _logger;
@@ -23,12 +26,12 @@ namespace VillaLuck.Controllers
             _logger = logger;
             _villaRepo = villaRepo;
             _mapper = mapper;
-            _apiResponse = new ();
+            _apiResponse = new();
         }
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task <ActionResult<APIResponse>> GetVillas()
+        public async Task<ActionResult<APIResponse>> GetVillas()
         {
 
             try
@@ -54,7 +57,7 @@ namespace VillaLuck.Controllers
 
         }
 
-        [HttpGet("id:int", Name ="GetVilla")]
+        [HttpGet("id:int", Name = "GetVilla")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -91,7 +94,7 @@ namespace VillaLuck.Controllers
                 return _apiResponse;
             }
 
-    
+
         }
 
         [HttpPost]
@@ -111,10 +114,10 @@ namespace VillaLuck.Controllers
                     return BadRequest(_apiResponse);
                 }
 
-                if(await _villaRepo.Obtener(v=>v.Nombre.ToLower() == villaCreateDto.Nombre.ToLower()) != null)
-                { 
+                if (await _villaRepo.Obtener(v => v.Nombre.ToLower() == villaCreateDto.Nombre.ToLower()) != null)
+                {
                     ModelState.AddModelError("NombreExiste", "La villa con ese nombre ya existe");
-                    return BadRequest(ModelState);  
+                    return BadRequest(ModelState);
                 }
                 if (villaCreateDto == null) return BadRequest(villaCreateDto);
 
@@ -150,15 +153,15 @@ namespace VillaLuck.Controllers
                     _apiResponse.IsExitoso = false;
                     return BadRequest(_apiResponse);
                 }
-                var villa = await _villaRepo.Obtener(v=> v.Id == id);
+                var villa = await _villaRepo.Obtener(v => v.Id == id);
                 if (villa == null)
                 {
                     _apiResponse.StatusCode = HttpStatusCode.NotFound;
                     _apiResponse.IsExitoso = false;
                     return NotFound(_apiResponse);
                 }
-                    
- 
+
+
                 //VillaStore.villaList.Remove(villa);
                 await _villaRepo.Remover(villa);
                 _apiResponse.StatusCode = HttpStatusCode.NoContent;
@@ -180,7 +183,7 @@ namespace VillaLuck.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> UpdateVilla(int id, [FromBody] VillaUpdateDto villaUpdateDto)
         {
-            if(villaUpdateDto == null || id != villaUpdateDto.Id)
+            if (villaUpdateDto == null || id != villaUpdateDto.Id)
             {
                 _apiResponse.StatusCode = HttpStatusCode.BadRequest;
                 _apiResponse.IsExitoso = false;
@@ -199,7 +202,7 @@ namespace VillaLuck.Controllers
         [HttpPatch("{id:int}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async  Task<IActionResult> UpdatePartialVilla(int id, JsonPatchDocument<VillaUpdateDto> patchDto)
+        public async Task<IActionResult> UpdatePartialVilla(int id, JsonPatchDocument<VillaUpdateDto> patchDto)
         {
             if (patchDto == null || id == 0)
             {
@@ -208,9 +211,9 @@ namespace VillaLuck.Controllers
                 return BadRequest(_apiResponse);
             }
 
-            var villa = await _villaRepo.Obtener(v => v.Id == id, traked:false);
+            var villa = await _villaRepo.Obtener(v => v.Id == id, traked: false);
 
-  
+
 
             //Con mapper
             VillaUpdateDto villaDto = _mapper.Map<VillaUpdateDto>(patchDto);
@@ -224,7 +227,7 @@ namespace VillaLuck.Controllers
 
 
             patchDto.ApplyTo(villaDto, ModelState);
-            if(!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
             //Con mapper
             Villa modelo = _mapper.Map<Villa>(villaDto);

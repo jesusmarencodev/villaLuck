@@ -117,3 +117,6 @@ C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\De
 C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\obj\Debug\net7.0\ref\VillaLuck.dll
 C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\daro\Documents\JESUS MARENCO\estudios\25-Net\VillaLuck\VillaLuck\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
