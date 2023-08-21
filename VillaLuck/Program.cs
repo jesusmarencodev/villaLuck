@@ -25,6 +25,7 @@ builder.Services.AddAutoMapper(typeof(MappingConfig));
 //agregando servicios para poder inyectar los repositorios al contructor
 builder.Services.AddScoped<IVillaRepositorio, VillaRepositorio>();
 builder.Services.AddScoped<IVillaNumeroRepositorio, NumeroVillaRepositorio>();
+builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 
 var app = builder.Build();
 
